@@ -1,1 +1,579 @@
+{
+  "schemaVersion": "1.0",
+  "scenarioCount": 30,
+  "scenarios": [
+    {
+      "id": 1,
+      "title": "Inbox Overload",
+      "difficulty": "Beginner",
+      "industry": "Executive Administration",
+      "category": "Outlook",
+      "estimatedTime": 3,
 
+      "scenario": "The executive you support has been out of the office for a week. When they return, they're overwhelmed by the volume of email waiting for them and aren't sure where to start.",
+
+      "recommendedTool": "Outlook Copilot",
+
+      "toolScores": {
+        "Outlook Copilot": 50,
+        "Copilot Chat": 35,
+        "Teams Copilot": 10,
+        "Word Copilot": 0,
+        "Excel Copilot": 0,
+        "PowerPoint Copilot": 0,
+        "Agent": 0
+      },
+
+      "toolExplanation": "Outlook Copilot works directly with inbox content and can summarize messages, identify action items, and help prioritize what deserves attention first.",
+
+      "promptScoring": {
+        "goal": ["review", "summarize", "analyze", "identify"],
+        "context": ["email", "emails", "inbox", "messages"],
+        "audience": ["executive", "manager", "leader"],
+        "outputFormat": ["summary", "report", "bullet", "list"],
+        "constraints": ["urgent", "important", "priority", "prioritized"]
+      },
+
+      "scenarioUnderstanding": [
+        {
+          "requirement": "prioritize important messages",
+          "keywords": ["priority", "prioritize", "important", "urgent", "critical"]
+        },
+        {
+          "requirement": "identify action items",
+          "keywords": ["action item", "action items", "follow up", "next steps"]
+        },
+        {
+          "requirement": "review recent messages",
+          "keywords": ["last week", "seven days", "7 days", "recent"]
+        },
+        {
+          "requirement": "summarize findings",
+          "keywords": ["summary", "summarize", "overview"]
+        },
+        {
+          "requirement": "organize information",
+          "keywords": ["group", "organize", "categorize", "by topic"]
+        }
+      ],
+
+      "samplePrompt": "Review my unread emails from the last seven days, identify urgent messages and action items, and create a prioritized summary for my executive using bullet points."
+    },
+
+    {
+      "id": 2,
+      "title": "Policy Draft",
+      "difficulty": "Beginner",
+      "industry": "Human Resources",
+      "category": "Word",
+      "estimatedTime": 3,
+
+      "scenario": "An HR manager has a collection of notes from several leadership meetings but is struggling to turn them into a professional remote work policy for employees.",
+
+      "recommendedTool": "Word Copilot",
+
+      "toolScores": {
+        "Word Copilot": 50,
+        "Copilot Chat": 35,
+        "Outlook Copilot": 0,
+        "Excel Copilot": 0,
+        "PowerPoint Copilot": 0,
+        "Teams Copilot": 0,
+        "Agent": 0
+      },
+
+      "toolExplanation": "Word Copilot is built for creating and refining structured business documents such as policies, procedures, and employee communications.",
+
+      "promptScoring": {
+        "goal": ["create", "draft", "write", "generate"],
+        "context": ["notes", "meeting notes", "information"],
+        "audience": ["employees", "staff", "team members"],
+        "outputFormat": ["policy", "document"],
+        "constraints": ["professional", "formal", "clear"]
+      },
+
+      "scenarioUnderstanding": [
+        {
+          "requirement": "create policy",
+          "keywords": ["policy", "guidelines", "expectations"]
+        },
+        {
+          "requirement": "use meeting notes",
+          "keywords": ["notes", "meeting", "leadership discussions"]
+        },
+        {
+          "requirement": "employee audience",
+          "keywords": ["employees", "staff"]
+        },
+        {
+          "requirement": "clear structure",
+          "keywords": ["sections", "organized", "structure"]
+        },
+        {
+          "requirement": "professional language",
+          "keywords": ["professional", "formal"]
+        }
+      ],
+
+      "samplePrompt": "Create a remote work policy using these leadership meeting notes. Organize it into clear sections for employees and use a professional tone."
+    },
+
+    {
+      "id": 3,
+      "title": "Leadership Deck Needed Tomorrow",
+      "difficulty": "Beginner",
+      "industry": "Project Management",
+      "category": "PowerPoint",
+      "estimatedTime": 3,
+
+      "scenario": "A project manager has updates scattered across emails, documents, and meeting notes. Leadership expects a presentation first thing tomorrow morning.",
+
+      "recommendedTool": "PowerPoint Copilot",
+
+      "toolScores": {
+        "PowerPoint Copilot": 50,
+        "Copilot Chat": 35,
+        "Word Copilot": 15,
+        "Outlook Copilot": 0,
+        "Excel Copilot": 0,
+        "Teams Copilot": 0,
+        "Agent": 0
+      },
+
+      "toolExplanation": "PowerPoint Copilot can transform source content into slides, speaker notes, and presentation-ready storylines.",
+
+      "promptScoring": {
+        "goal": ["create", "build", "generate"],
+        "context": ["project updates", "documents", "notes"],
+        "audience": ["leadership", "executives", "management"],
+        "outputFormat": ["presentation", "slides", "slide deck"],
+        "constraints": ["concise", "executive", "summary"]
+      },
+
+      "scenarioUnderstanding": [
+        {
+          "requirement": "presentation deliverable",
+          "keywords": ["presentation", "slides", "deck"]
+        },
+        {
+          "requirement": "leadership audience",
+          "keywords": ["leadership", "executive", "management"]
+        },
+        {
+          "requirement": "project updates",
+          "keywords": ["project", "updates", "status"]
+        },
+        {
+          "requirement": "summarize information",
+          "keywords": ["summary", "overview"]
+        },
+        {
+          "requirement": "highlight priorities",
+          "keywords": ["risks", "next steps", "highlights"]
+        }
+      ],
+
+      "samplePrompt": "Create an executive presentation using these project updates and meeting notes. Highlight key accomplishments, risks, and next steps in a concise format."
+    },
+
+    {
+      "id": 4,
+      "title": "Sales Data Mystery",
+      "difficulty": "Beginner",
+      "industry": "Sales",
+      "category": "Excel",
+      "estimatedTime": 3,
+
+      "scenario": "A sales manager has six months of sales data but cannot quickly determine whether performance is improving or declining.",
+
+      "recommendedTool": "Excel Copilot",
+
+      "toolScores": {
+        "Excel Copilot": 50,
+        "Copilot Chat": 25,
+        "Word Copilot": 0,
+        "PowerPoint Copilot": 0,
+        "Outlook Copilot": 0,
+        "Teams Copilot": 0,
+        "Agent": 0
+      },
+
+      "toolExplanation": "Excel Copilot is optimized for trend analysis, data exploration, calculations, and identifying patterns within spreadsheets.",
+
+      "promptScoring": {
+        "goal": ["analyze", "identify", "review"],
+        "context": ["sales", "data", "spreadsheet"],
+        "audience": ["manager", "leadership"],
+        "outputFormat": ["summary", "report", "analysis"],
+        "constraints": ["key trends", "outliers", "areas of concern"]
+      },
+
+      "scenarioUnderstanding": [
+        {
+          "requirement": "analyze sales data",
+          "keywords": ["sales", "performance"]
+        },
+        {
+          "requirement": "identify trends",
+          "keywords": ["trend", "trends"]
+        },
+        {
+          "requirement": "find patterns",
+          "keywords": ["pattern", "patterns"]
+        },
+        {
+          "requirement": "identify outliers",
+          "keywords": ["outliers", "unusual"]
+        },
+        {
+          "requirement": "summarize findings",
+          "keywords": ["summary", "findings"]
+        }
+      ],
+
+      "samplePrompt": "Analyze the last six months of sales data, identify trends and outliers, and summarize the most important findings for leadership."
+    },
+
+    {
+      "id": 5,
+      "title": "Missed Meeting",
+      "difficulty": "Beginner",
+      "industry": "General Business",
+      "category": "Teams",
+      "estimatedTime": 3,
+
+      "scenario": "You missed an important project meeting and have only fifteen minutes before speaking with stakeholders.",
+
+      "recommendedTool": "Teams Copilot",
+
+      "toolScores": {
+        "Teams Copilot": 50,
+        "Copilot Chat": 35,
+        "Outlook Copilot": 10,
+        "Word Copilot": 0,
+        "Excel Copilot": 0,
+        "PowerPoint Copilot": 0,
+        "Agent": 0
+      },
+
+      "toolExplanation": "Teams Copilot can summarize meetings, identify decisions, surface action items, and help users quickly catch up.",
+
+      "promptScoring": {
+        "goal": ["summarize", "review", "identify"],
+        "context": ["meeting", "discussion", "call"],
+        "audience": ["stakeholders", "project team"],
+        "outputFormat": ["summary", "bullets"],
+        "constraints": ["important decisions", "action items"]
+      },
+
+      "scenarioUnderstanding": [
+        {
+          "requirement": "meeting recap",
+          "keywords": ["meeting", "discussion"]
+        },
+        {
+          "requirement": "decisions",
+          "keywords": ["decisions", "decision"]
+        },
+        {
+          "requirement": "action items",
+          "keywords": ["action items", "follow up"]
+        },
+        {
+          "requirement": "next steps",
+          "keywords": ["next steps"]
+        },
+        {
+          "requirement": "stakeholder preparation",
+          "keywords": ["stakeholder", "prepare"]
+        }
+      ],
+
+      "samplePrompt": "Summarize this meeting, identify decisions and action items, and provide the information I need before meeting with stakeholders."
+    },
+
+    {
+      "id": 6,
+      "title": "New Competitor Appears",
+      "difficulty": "Beginner",
+      "industry": "Marketing",
+      "category": "Copilot Chat",
+
+      "scenario": "Your organization recently learned about a new competitor entering the market and leadership wants an overview before tomorrow's discussion.",
+
+      "recommendedTool": "Copilot Chat",
+
+      "toolScores": {
+        "Copilot Chat": 50,
+        "Word Copilot": 20,
+        "PowerPoint Copilot": 10,
+        "Outlook Copilot": 0,
+        "Excel Copilot": 0,
+        "Teams Copilot": 0,
+        "Agent": 0
+      },
+
+      "toolExplanation": "Copilot Chat excels at researching topics, summarizing information, comparing sources, and preparing discussion materials.",
+
+      "promptScoring": {
+        "goal": ["research", "analyze", "identify"],
+        "context": ["competitor", "market"],
+        "audience": ["leadership", "executives"],
+        "outputFormat": ["overview", "summary", "briefing"],
+        "constraints": ["risks", "opportunities"]
+      },
+
+      "scenarioUnderstanding": [
+        {
+          "requirement": "competitor analysis",
+          "keywords": ["competitor", "competition"]
+        },
+        {
+          "requirement": "market overview",
+          "keywords": ["market", "industry"]
+        },
+        {
+          "requirement": "risks",
+          "keywords": ["risk", "risks"]
+        },
+        {
+          "requirement": "opportunities",
+          "keywords": ["opportunities", "opportunity"]
+        },
+        {
+          "requirement": "leadership briefing",
+          "keywords": ["leadership", "executive"]
+        }
+      ],
+
+      "samplePrompt": "Research this competitor and provide a leadership briefing that summarizes strengths, weaknesses, opportunities, and risks."
+    },
+
+    {
+  "id": 7,
+  "title": "Client Proposal Creation",
+  "difficulty": "Beginner",
+  "industry": "Consulting",
+  "category": "Word",
+  "estimatedTime": 3,
+
+  "scenario": "A consultant has notes from a discovery call but struggles to transform them into a polished proposal for a prospective client.",
+
+  "recommendedTool": "Word Copilot",
+
+  "toolScores": {
+    "Word Copilot": 50,
+    "Copilot Chat": 25,
+    "PowerPoint Copilot": 10,
+    "Outlook Copilot": 0,
+    "Excel Copilot": 0,
+    "Teams Copilot": 0,
+    "Agent": 0
+  },
+
+  "toolExplanation": "Word Copilot is designed to turn rough ideas, meeting notes, and source material into professional business documents. Since the desired outcome is a formal proposal, Word Copilot provides the most direct path to a polished deliverable.",
+
+  "promptScoring": {
+    "goal": ["create", "draft", "write", "generate", "develop"],
+    "context": ["discovery call", "client notes", "requirements", "meeting notes"],
+    "audience": ["client", "prospective client", "customer"],
+    "outputFormat": ["proposal", "document", "business proposal"],
+    "constraints": ["professional", "persuasive", "organized", "clear"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "create proposal",
+      "keywords": ["proposal", "business proposal"]
+    },
+    {
+      "requirement": "use discovery notes",
+      "keywords": ["discovery", "requirements", "notes", "meeting notes"]
+    },
+    {
+      "requirement": "client audience",
+      "keywords": ["client", "customer"]
+    },
+    {
+      "requirement": "structured content",
+      "keywords": ["sections", "organized", "structure"]
+    },
+    {
+      "requirement": "professional language",
+      "keywords": ["professional", "persuasive", "formal"]
+    }
+  ],
+
+  "samplePrompt": "Create a professional client proposal using these discovery notes. Organize the proposal into sections for business challenges, recommended solution, timeline, and expected outcomes."
+},
+{
+  "id": 8,
+  "title": "Customer Meeting Preparation",
+  "difficulty": "Beginner",
+  "industry": "Sales",
+  "category": "Copilot Chat",
+  "estimatedTime": 3,
+
+  "scenario": "You have a meeting with a client in one hour and need to quickly understand previous communications, outstanding requests, and recent activity.",
+
+  "recommendedTool": "Copilot Chat",
+
+  "toolScores": {
+    "Copilot Chat": 50,
+    "Outlook Copilot": 40,
+    "Teams Copilot": 20,
+    "Word Copilot": 0,
+    "Excel Copilot": 0,
+    "PowerPoint Copilot": 0,
+    "Agent": 0
+  },
+
+  "toolExplanation": "Copilot Chat can gather and synthesize information from multiple Microsoft 365 sources, making it ideal for preparing a comprehensive client briefing before a meeting.",
+
+  "promptScoring": {
+    "goal": ["review", "summarize", "prepare", "identify"],
+    "context": ["communications", "emails", "client activity", "meetings"],
+    "audience": ["salesperson", "account manager", "meeting attendee"],
+    "outputFormat": ["briefing", "summary", "overview"],
+    "constraints": ["concise", "actionable", "prioritized"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "review communications",
+      "keywords": ["emails", "communications", "messages"]
+    },
+    {
+      "requirement": "identify requests",
+      "keywords": ["requests", "open items", "outstanding"]
+    },
+    {
+      "requirement": "prepare for meeting",
+      "keywords": ["meeting", "preparation", "briefing"]
+    },
+    {
+      "requirement": "summarize activity",
+      "keywords": ["activity", "history", "recent interactions"]
+    },
+    {
+      "requirement": "highlight priorities",
+      "keywords": ["priority", "important", "urgent"]
+    }
+  ],
+
+  "samplePrompt": "Review recent client communications, identify outstanding requests and key discussion topics, and create a concise briefing that will help me prepare for today's meeting."
+},
+{
+  "id": 9,
+  "title": "Department Newsletter",
+  "difficulty": "Beginner",
+  "industry": "Internal Communications",
+  "category": "Word",
+  "estimatedTime": 3,
+
+  "scenario": "Your department collected updates from several teams and now needs a professional newsletter distributed to employees.",
+
+  "recommendedTool": "Word Copilot",
+
+  "toolScores": {
+    "Word Copilot": 50,
+    "Copilot Chat": 20,
+    "PowerPoint Copilot": 10,
+    "Outlook Copilot": 0,
+    "Excel Copilot": 0,
+    "Teams Copilot": 0,
+    "Agent": 0
+  },
+
+  "toolExplanation": "Word Copilot is best suited for creating well-structured written communications such as newsletters, announcements, and employee updates.",
+
+  "promptScoring": {
+    "goal": ["create", "draft", "write", "generate"],
+    "context": ["team updates", "department updates", "employee communications"],
+    "audience": ["employees", "staff", "team members"],
+    "outputFormat": ["newsletter", "communication", "update"],
+    "constraints": ["professional", "engaging", "organized"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "create newsletter",
+      "keywords": ["newsletter", "communication"]
+    },
+    {
+      "requirement": "employee audience",
+      "keywords": ["employees", "staff"]
+    },
+    {
+      "requirement": "organize updates",
+      "keywords": ["sections", "team updates", "organized"]
+    },
+    {
+      "requirement": "professional tone",
+      "keywords": ["professional", "clear"]
+    },
+    {
+      "requirement": "multiple contributors",
+      "keywords": ["teams", "departments", "groups"]
+    }
+  ],
+
+  "samplePrompt": "Create a department newsletter using these team updates. Organize the content into clear sections, write for employees, and highlight the most important announcements."
+},
+{
+  "id": 10,
+  "title": "Expense Review",
+  "difficulty": "Beginner",
+  "industry": "Finance",
+  "category": "Excel",
+  "estimatedTime": 3,
+
+  "scenario": "A department director suspects spending has increased but cannot identify where unusual expenses are occurring.",
+
+  "recommendedTool": "Excel Copilot",
+
+  "toolScores": {
+    "Excel Copilot": 50,
+    "Copilot Chat": 20,
+    "Word Copilot": 0,
+    "Outlook Copilot": 0,
+    "PowerPoint Copilot": 0,
+    "Teams Copilot": 0,
+    "Agent": 0
+  },
+
+  "toolExplanation": "Excel Copilot is designed to analyze financial data, identify trends and outliers, and explain findings within spreadsheet data.",
+
+  "promptScoring": {
+    "goal": ["analyze", "identify", "review", "compare"],
+    "context": ["expenses", "spending", "financial data", "spreadsheet"],
+    "audience": ["director", "leadership", "manager"],
+    "outputFormat": ["analysis", "summary", "report"],
+    "constraints": ["outliers", "unusual", "largest increases"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "analyze expenses",
+      "keywords": ["expense", "expenses", "spending"]
+    },
+    {
+      "requirement": "identify unusual activity",
+      "keywords": ["unusual", "outlier", "anomaly"]
+    },
+    {
+      "requirement": "identify trends",
+      "keywords": ["trend", "increase", "decrease"]
+    },
+    {
+      "requirement": "summarize findings",
+      "keywords": ["summary", "findings", "report"]
+    },
+    {
+      "requirement": "highlight concerns",
+      "keywords": ["concerns", "issues", "risks"]
+    }
+  ],
+
+  "samplePrompt": "Analyze this expense data, identify unusual spending patterns and cost increases, and provide a summary highlighting the areas that deserve management attention."
+}
