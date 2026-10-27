@@ -118,7 +118,7 @@ function displayScenario(scenario) {
         scenario.difficulty;
 
     document.getElementById("category-badge").textContent =
-        scenario.category;
+        scenario.recommendedTool;
 
     document.getElementById("user-prompt").value = "";
 
