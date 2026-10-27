@@ -577,3 +577,1145 @@
 
   "samplePrompt": "Analyze this expense data, identify unusual spending patterns and cost increases, and provide a summary highlighting the areas that deserve management attention."
 }
+
+    {
+  "id": 11,
+  "title": "Quarterly Business Review",
+  "difficulty": "Intermediate",
+  "industry": "Executive Leadership",
+  "category": "PowerPoint",
+  "estimatedTime": 3,
+
+  "scenario": "Leadership has requested a concise overview of organizational performance. Financial results, project updates, operational metrics, and risks all exist in separate documents and reports.",
+
+  "recommendedTool": "PowerPoint Copilot",
+
+  "toolScores": {
+    "PowerPoint Copilot": 50,
+    "Copilot Chat": 35,
+    "Word Copilot": 20,
+    "Excel Copilot": 10,
+    "Outlook Copilot": 0,
+    "Teams Copilot": 0,
+    "Agent": 0
+  },
+
+  "toolExplanation": "PowerPoint Copilot is best suited when the desired outcome is an executive presentation that combines information from multiple sources into a structured narrative.",
+
+  "promptScoring": {
+    "goal": ["create", "build", "generate", "develop"],
+    "context": ["financial", "projects", "operational metrics", "reports"],
+    "audience": ["leadership", "executives", "board"],
+    "outputFormat": ["presentation", "slide deck", "slides"],
+    "constraints": ["concise", "executive", "high-level"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "presentation deliverable",
+      "keywords": ["presentation", "slides", "deck"]
+    },
+    {
+      "requirement": "multiple sources",
+      "keywords": ["reports", "documents", "multiple sources"]
+    },
+    {
+      "requirement": "leadership audience",
+      "keywords": ["leadership", "executives", "board"]
+    },
+    {
+      "requirement": "key trends",
+      "keywords": ["trends", "performance", "metrics"]
+    },
+    {
+      "requirement": "risks and actions",
+      "keywords": ["risks", "recommendations", "actions"]
+    }
+  ],
+
+  "samplePrompt": "Create a 10-slide executive business review using these reports. Summarize financial performance, project status, operational metrics, risks, and recommended actions."
+},
+{
+  "id": 12,
+  "title": "Employee Survey Analysis",
+  "difficulty": "Intermediate",
+  "industry": "Human Resources",
+  "category": "Excel",
+  "estimatedTime": 3,
+
+  "scenario": "An HR team recently completed an employee engagement survey and received hundreds of responses. They need to understand the most common concerns and positive themes.",
+
+  "recommendedTool": "Excel Copilot",
+
+  "toolScores": {
+    "Excel Copilot": 50,
+    "Copilot Chat": 40,
+    "Word Copilot": 10,
+    "PowerPoint Copilot": 0,
+    "Outlook Copilot": 0,
+    "Teams Copilot": 0,
+    "Agent": 0
+  },
+
+  "toolExplanation": "Excel Copilot can analyze large datasets, identify trends, summarize responses, and quantify patterns across survey results.",
+
+  "promptScoring": {
+    "goal": ["analyze", "identify", "summarize"],
+    "context": ["survey", "responses", "employee feedback"],
+    "audience": ["hr", "leadership", "management"],
+    "outputFormat": ["analysis", "summary", "report"],
+    "constraints": ["top themes", "common concerns", "sentiment"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "survey analysis",
+      "keywords": ["survey", "responses", "feedback"]
+    },
+    {
+      "requirement": "identify themes",
+      "keywords": ["themes", "patterns", "trends"]
+    },
+    {
+      "requirement": "employee concerns",
+      "keywords": ["concerns", "issues", "challenges"]
+    },
+    {
+      "requirement": "positive findings",
+      "keywords": ["positive", "strengths", "successes"]
+    },
+    {
+      "requirement": "summarize results",
+      "keywords": ["summary", "report"]
+    }
+  ],
+
+  "samplePrompt": "Analyze these survey results, identify common themes and concerns, summarize positive feedback, and provide a report for HR leadership."
+},
+{
+  "id": 13,
+  "title": "Grant Application",
+  "difficulty": "Intermediate",
+  "industry": "Nonprofit",
+  "category": "Word",
+  "estimatedTime": 3,
+
+  "scenario": "A nonprofit organization wants to pursue a new funding opportunity but needs help turning organizational information into a persuasive grant application.",
+
+  "recommendedTool": "Word Copilot",
+
+  "toolScores": {
+    "Word Copilot": 50,
+    "Copilot Chat": 30,
+    "PowerPoint Copilot": 0,
+    "Excel Copilot": 0,
+    "Outlook Copilot": 0,
+    "Teams Copilot": 0,
+    "Agent": 0
+  },
+
+  "toolExplanation": "Word Copilot is ideal for drafting structured, persuasive written content such as grant applications and proposals.",
+
+  "promptScoring": {
+    "goal": ["write", "draft", "create"],
+    "context": ["grant", "organization", "funding requirements"],
+    "audience": ["grant reviewer", "funding organization"],
+    "outputFormat": ["grant application", "proposal"],
+    "constraints": ["persuasive", "professional", "aligned"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "grant application",
+      "keywords": ["grant", "funding"]
+    },
+    {
+      "requirement": "organizational information",
+      "keywords": ["organization", "mission", "programs"]
+    },
+    {
+      "requirement": "persuasive writing",
+      "keywords": ["persuasive", "impact"]
+    },
+    {
+      "requirement": "structured response",
+      "keywords": ["organized", "sections"]
+    },
+    {
+      "requirement": "funding alignment",
+      "keywords": ["requirements", "criteria"]
+    }
+  ],
+
+  "samplePrompt": "Create a grant application using this organizational information. Align the response to the funding requirements and emphasize community impact."
+},
+{
+  "id": 14,
+  "title": "Contract Review",
+  "difficulty": "Intermediate",
+  "industry": "Legal",
+  "category": "Copilot Chat",
+  "estimatedTime": 3,
+
+  "scenario": "A legal team received a lengthy contract and needs to quickly identify obligations, risks, deadlines, and provisions that deserve additional review.",
+
+  "recommendedTool": "Copilot Chat",
+
+  "toolScores": {
+    "Copilot Chat": 50,
+    "Word Copilot": 30,
+    "Agent": 10,
+    "PowerPoint Copilot": 0,
+    "Excel Copilot": 0,
+    "Outlook Copilot": 0,
+    "Teams Copilot": 0
+  },
+
+  "toolExplanation": "Copilot Chat excels at reviewing large amounts of content and summarizing key findings, obligations, and risks.",
+
+  "promptScoring": {
+    "goal": ["review", "identify", "summarize", "analyze"],
+    "context": ["contract", "agreement"],
+    "audience": ["legal team", "leadership"],
+    "outputFormat": ["summary", "report"],
+    "constraints": ["risks", "key clauses", "deadlines"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "contract review",
+      "keywords": ["contract", "agreement"]
+    },
+    {
+      "requirement": "obligations",
+      "keywords": ["obligations", "responsibilities"]
+    },
+    {
+      "requirement": "risks",
+      "keywords": ["risk", "liability"]
+    },
+    {
+      "requirement": "important provisions",
+      "keywords": ["clause", "provision", "terms"]
+    },
+    {
+      "requirement": "deadlines",
+      "keywords": ["deadline", "renewal", "expiration"]
+    }
+  ],
+
+  "samplePrompt": "Review this contract and summarize key obligations, risks, deadlines, and clauses that require further legal review."
+},
+{
+  "id": 15,
+  "title": "Healthcare Operations Update",
+  "difficulty": "Intermediate",
+  "industry": "Healthcare",
+  "category": "Word",
+  "estimatedTime": 3,
+
+  "scenario": "A healthcare leader must explain patient satisfaction trends and operational performance to hospital leadership.",
+
+  "recommendedTool": "Word Copilot",
+
+  "toolScores": {
+    "Word Copilot": 50,
+    "Copilot Chat": 35,
+    "PowerPoint Copilot": 25,
+    "Excel Copilot": 15,
+    "Outlook Copilot": 0,
+    "Teams Copilot": 0,
+    "Agent": 0
+  },
+
+  "toolExplanation": "Word Copilot helps transform data and findings into a structured business report written for leadership audiences.",
+
+  "promptScoring": {
+    "goal": ["create", "summarize", "write"],
+    "context": ["patient satisfaction", "operations", "metrics"],
+    "audience": ["hospital leadership", "executives"],
+    "outputFormat": ["report", "summary"],
+    "constraints": ["professional", "concise"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "patient satisfaction",
+      "keywords": ["patient satisfaction", "patient experience"]
+    },
+    {
+      "requirement": "operational performance",
+      "keywords": ["operations", "performance", "metrics"]
+    },
+    {
+      "requirement": "leadership communication",
+      "keywords": ["leadership", "executives"]
+    },
+    {
+      "requirement": "trends",
+      "keywords": ["trends", "patterns"]
+    },
+    {
+      "requirement": "opportunities",
+      "keywords": ["opportunities", "improvements"]
+    }
+  ],
+
+  "samplePrompt": "Create a leadership report summarizing patient satisfaction trends, operational performance metrics, and recommended areas for improvement."
+},
+{
+  "id": 16,
+  "title": "School Board Presentation",
+  "difficulty": "Intermediate",
+  "industry": "Education",
+  "category": "PowerPoint",
+  "estimatedTime": 3,
+
+  "scenario": "A school administrator must present student performance, budget information, and district priorities to the school board.",
+
+  "recommendedTool": "PowerPoint Copilot",
+
+  "toolScores": {
+    "PowerPoint Copilot": 50,
+    "Copilot Chat": 30,
+    "Word Copilot": 20,
+    "Excel Copilot": 10,
+    "Outlook Copilot": 0,
+    "Teams Copilot": 0,
+    "Agent": 0
+  },
+
+  "toolExplanation": "PowerPoint Copilot is the strongest choice when the outcome is a presentation intended for leadership and decision makers.",
+
+  "promptScoring": {
+    "goal": ["create", "build", "develop"],
+    "context": ["student performance", "budget", "district priorities"],
+    "audience": ["school board", "leadership"],
+    "outputFormat": ["presentation", "slides"],
+    "constraints": ["clear", "executive", "concise"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "student performance",
+      "keywords": ["students", "performance", "achievement"]
+    },
+    {
+      "requirement": "budget information",
+      "keywords": ["budget", "financial"]
+    },
+    {
+      "requirement": "school board audience",
+      "keywords": ["school board", "board"]
+    },
+    {
+      "requirement": "presentation",
+      "keywords": ["slides", "presentation"]
+    },
+    {
+      "requirement": "district priorities",
+      "keywords": ["priorities", "goals", "initiatives"]
+    }
+  ],
+
+  "samplePrompt": "Create a presentation for the school board that summarizes student performance, budget status, district priorities, and recommended next steps."
+},
+{
+  "id": 17,
+  "title": "Government Procurement Analysis",
+  "difficulty": "Intermediate",
+  "industry": "Government",
+  "category": "Excel",
+  "estimatedTime": 3,
+
+  "scenario": "A government department wants to understand where procurement dollars are being spent and identify opportunities to reduce costs.",
+
+  "recommendedTool": "Excel Copilot",
+
+  "toolScores": {
+    "Excel Copilot": 50,
+    "Copilot Chat": 25,
+    "Word Copilot": 0,
+    "PowerPoint Copilot": 0,
+    "Outlook Copilot": 0,
+    "Teams Copilot": 0,
+    "Agent": 0
+  },
+
+  "toolExplanation": "Excel Copilot is best for analyzing spending data, identifying procurement trends, and surfacing cost-saving opportunities.",
+
+  "promptScoring": {
+    "goal": ["analyze", "compare", "identify"],
+    "context": ["procurement", "spending", "purchases"],
+    "audience": ["leadership", "procurement"],
+    "outputFormat": ["analysis", "report"],
+    "constraints": ["cost savings", "largest categories"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "spending analysis",
+      "keywords": ["spending", "procurement"]
+    },
+    {
+      "requirement": "patterns",
+      "keywords": ["patterns", "trends"]
+    },
+    {
+      "requirement": "cost reduction",
+      "keywords": ["saving", "savings", "reduce costs"]
+    },
+    {
+      "requirement": "summary findings",
+      "keywords": ["summary", "findings"]
+    },
+    {
+      "requirement": "leadership insights",
+      "keywords": ["recommendations", "opportunities"]
+    }
+  ],
+
+  "samplePrompt": "Analyze procurement spending data, identify major spending categories and cost-saving opportunities, and summarize your findings."
+},
+{
+  "id": 18,
+  "title": "Knowledge Search Across Multiple Sources",
+  "difficulty": "Intermediate",
+  "industry": "General Business",
+  "category": "Copilot Chat",
+  "estimatedTime": 3,
+
+  "scenario": "An employee needs information that may exist somewhere in emails, documents, meetings, and chats, but does not know where to begin looking.",
+
+  "recommendedTool": "Copilot Chat",
+
+  "toolScores": {
+    "Copilot Chat": 50,
+    "Agent": 40,
+    "Teams Copilot": 20,
+    "Outlook Copilot": 10,
+    "Word Copilot": 0,
+    "Excel Copilot": 0,
+    "PowerPoint Copilot": 0
+  },
+
+  "toolExplanation": "Copilot Chat can search across Microsoft 365 content and synthesize information from multiple sources into a single response.",
+
+  "promptScoring": {
+    "goal": ["find", "search", "locate", "identify"],
+    "context": ["emails", "documents", "meetings", "chats"],
+    "audience": ["employee", "team"],
+    "outputFormat": ["summary", "findings"],
+    "constraints": ["all available sources", "important information"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "multiple sources",
+      "keywords": ["emails", "documents", "meetings", "chats"]
+    },
+    {
+      "requirement": "information retrieval",
+      "keywords": ["search", "find", "locate"]
+    },
+    {
+      "requirement": "summary",
+      "keywords": ["summary", "overview"]
+    },
+    {
+      "requirement": "important findings",
+      "keywords": ["key information", "important"]
+    },
+    {
+      "requirement": "save time",
+      "keywords": ["quickly", "efficient"]
+    }
+  ],
+
+  "samplePrompt": "Search across my Microsoft 365 content and summarize information related to this topic, including supporting documents, emails, meetings, and chats."
+},
+{
+  "id": 19,
+  "title": "Project Risk Assessment",
+  "difficulty": "Intermediate",
+  "industry": "Project Management",
+  "category": "Copilot Chat",
+  "estimatedTime": 3,
+
+  "scenario": "A project manager is concerned about delays but does not have time to manually review every status update and project document.",
+
+  "recommendedTool": "Copilot Chat",
+
+  "toolScores": {
+    "Copilot Chat": 50,
+    "Teams Copilot": 25,
+    "Word Copilot": 15,
+    "Excel Copilot": 10,
+    "Outlook Copilot": 0,
+    "PowerPoint Copilot": 0,
+    "Agent": 0
+  },
+
+  "toolExplanation": "Copilot Chat can analyze project content from multiple sources and identify potential risks, blockers, and concerns.",
+
+  "promptScoring": {
+    "goal": ["identify", "analyze", "review"],
+    "context": ["project updates", "documents", "status reports"],
+    "audience": ["project manager", "leadership"],
+    "outputFormat": ["risk summary", "report"],
+    "constraints": ["highest risks", "recommended actions"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "project review",
+      "keywords": ["project", "status"]
+    },
+    {
+      "requirement": "delay risks",
+      "keywords": ["delay", "risk", "blocker"]
+    },
+    {
+      "requirement": "multiple documents",
+      "keywords": ["documents", "updates", "reports"]
+    },
+    {
+      "requirement": "prioritization",
+      "keywords": ["highest", "critical", "priority"]
+    },
+    {
+      "requirement": "recommend actions",
+      "keywords": ["recommendations", "actions"]
+    }
+  ],
+
+  "samplePrompt": "Review project documentation and status updates, identify the most significant risks or delays, and recommend actions to reduce project impact."
+},
+{
+  "id": 20,
+  "title": "Customer Feedback Review",
+  "difficulty": "Intermediate",
+  "industry": "Retail",
+  "category": "Copilot Chat",
+  "estimatedTime": 3,
+
+  "scenario": "Hundreds of customer comments have been collected from surveys and support interactions, making it difficult to determine what customers care about most.",
+
+  "recommendedTool": "Copilot Chat",
+
+  "toolScores": {
+    "Copilot Chat": 50,
+    "Excel Copilot": 40,
+    "Word Copilot": 15,
+    "PowerPoint Copilot": 0,
+    "Outlook Copilot": 0,
+    "Teams Copilot": 0,
+    "Agent": 0
+  },
+
+  "toolExplanation": "Copilot Chat can synthesize large amounts of unstructured feedback and identify meaningful themes, concerns, and opportunities.",
+
+  "promptScoring": {
+    "goal": ["analyze", "identify", "summarize"],
+    "context": ["customer feedback", "comments", "survey responses"],
+    "audience": ["leadership", "customer experience team"],
+    "outputFormat": ["summary", "analysis", "report"],
+    "constraints": ["top themes", "prioritized issues"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "customer feedback",
+      "keywords": ["customers", "feedback", "comments"]
+    },
+    {
+      "requirement": "identify themes",
+      "keywords": ["themes", "patterns", "common"]
+    },
+    {
+      "requirement": "prioritize issues",
+      "keywords": ["issues", "concerns", "complaints"]
+    },
+    {
+      "requirement": "identify opportunities",
+      "keywords": ["opportunities", "improvements"]
+    },
+    {
+      "requirement": "summarize findings",
+      "keywords": ["summary", "findings"]
+    }
+  ],
+
+  "samplePrompt": "Analyze these customer comments, identify common themes and concerns, prioritize the most important issues, and summarize opportunities for improvement."
+}
+
+    {
+  "id": 21,
+  "title": "HR Question Overload",
+  "difficulty": "Advanced",
+  "industry": "Human Resources",
+  "category": "Agent",
+  "estimatedTime": 3,
+
+  "scenario": "Employees repeatedly ask HR the same questions about PTO, holidays, benefits, and company policies. The HR team is spending significant time answering questions they've already answered many times before.",
+
+  "recommendedTool": "Agent",
+
+  "toolScores": {
+    "Agent": 50,
+    "Copilot Chat": 25,
+    "Word Copilot": 5,
+    "Outlook Copilot": 0,
+    "Excel Copilot": 0,
+    "PowerPoint Copilot": 0,
+    "Teams Copilot": 0
+  },
+
+  "toolExplanation": "An Agent is designed to provide consistent answers based on approved knowledge sources and can reduce repetitive work by enabling employee self-service.",
+
+  "promptScoring": {
+    "goal": ["create", "build", "develop", "configure"],
+    "context": ["hr", "benefits", "pto", "policies"],
+    "audience": ["employees", "staff"],
+    "outputFormat": ["agent", "assistant", "knowledge assistant"],
+    "constraints": ["approved answers", "consistent responses", "self-service"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "repetitive questions",
+      "keywords": ["repeated", "recurring", "same questions"]
+    },
+    {
+      "requirement": "employee self-service",
+      "keywords": ["self-service", "employees", "staff"]
+    },
+    {
+      "requirement": "policy questions",
+      "keywords": ["pto", "benefits", "policies", "holidays"]
+    },
+    {
+      "requirement": "reduce workload",
+      "keywords": ["reduce time", "efficiency", "save time"]
+    },
+    {
+      "requirement": "consistent answers",
+      "keywords": ["consistent", "approved", "accurate"]
+    }
+  ],
+
+  "samplePrompt": "Create an HR knowledge agent that answers common employee questions about PTO, benefits, holidays, and company policies using approved HR documentation."
+},
+{
+  "id": 22,
+  "title": "IT Help Desk Assistant",
+  "difficulty": "Advanced",
+  "industry": "Information Technology",
+  "category": "Agent",
+  "estimatedTime": 3,
+
+  "scenario": "The IT team spends hours each week responding to the same password, software, and troubleshooting questions.",
+
+  "recommendedTool": "Agent",
+
+  "toolScores": {
+    "Agent": 50,
+    "Copilot Chat": 25,
+    "Teams Copilot": 10,
+    "Word Copilot": 0,
+    "Excel Copilot": 0,
+    "PowerPoint Copilot": 0,
+    "Outlook Copilot": 0
+  },
+
+  "toolExplanation": "An Agent can provide immediate answers to common support requests while freeing IT staff to focus on more complex issues.",
+
+  "promptScoring": {
+    "goal": ["create", "build", "develop"],
+    "context": ["it", "technical support", "troubleshooting"],
+    "audience": ["employees", "users"],
+    "outputFormat": ["agent", "support assistant"],
+    "constraints": ["approved procedures", "consistent guidance"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "support questions",
+      "keywords": ["support", "help desk", "troubleshooting"]
+    },
+    {
+      "requirement": "repetitive issues",
+      "keywords": ["repeated", "common", "frequent"]
+    },
+    {
+      "requirement": "employee assistance",
+      "keywords": ["employees", "users", "staff"]
+    },
+    {
+      "requirement": "reduce support effort",
+      "keywords": ["efficiency", "reduce workload"]
+    },
+    {
+      "requirement": "approved procedures",
+      "keywords": ["documentation", "procedures", "knowledge base"]
+    }
+  ],
+
+  "samplePrompt": "Create an IT support agent that answers common troubleshooting and password questions using approved support documentation."
+},
+{
+  "id": 23,
+  "title": "New Hire Support",
+  "difficulty": "Advanced",
+  "industry": "Human Resources",
+  "category": "Agent",
+  "estimatedTime": 3,
+
+  "scenario": "New employees frequently ask the same onboarding questions during their first month, creating interruptions for managers and HR staff.",
+
+  "recommendedTool": "Agent",
+
+  "toolScores": {
+    "Agent": 50,
+    "Copilot Chat": 20,
+    "Teams Copilot": 10,
+    "Word Copilot": 0,
+    "Excel Copilot": 0,
+    "PowerPoint Copilot": 0,
+    "Outlook Copilot": 0
+  },
+
+  "toolExplanation": "Agents are ideal for onboarding because they provide a centralized knowledge experience that scales to every new employee.",
+
+  "promptScoring": {
+    "goal": ["create", "build", "develop"],
+    "context": ["onboarding", "new hires", "orientation"],
+    "audience": ["new employees", "employees"],
+    "outputFormat": ["agent", "assistant"],
+    "constraints": ["accurate", "easy to use", "self-service"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "onboarding support",
+      "keywords": ["onboarding", "new hire", "orientation"]
+    },
+    {
+      "requirement": "frequent questions",
+      "keywords": ["questions", "common", "repeated"]
+    },
+    {
+      "requirement": "employee support",
+      "keywords": ["employees", "new employees"]
+    },
+    {
+      "requirement": "reduce interruptions",
+      "keywords": ["efficiency", "reduce interruptions"]
+    },
+    {
+      "requirement": "knowledge access",
+      "keywords": ["knowledge", "resources", "guidance"]
+    }
+  ],
+
+  "samplePrompt": "Create an onboarding agent that helps new employees find answers about benefits, company policies, technology setup, and onboarding activities."
+},
+{
+  "id": 24,
+  "title": "Manufacturing Procedures",
+  "difficulty": "Advanced",
+  "industry": "Manufacturing",
+  "category": "Agent",
+  "estimatedTime": 3,
+
+  "scenario": "Employees need quick access to standard operating procedures and safety guidance while working on the production floor.",
+
+  "recommendedTool": "Agent",
+
+  "toolScores": {
+    "Agent": 50,
+    "Copilot Chat": 25,
+    "Teams Copilot": 5,
+    "Word Copilot": 0,
+    "Excel Copilot": 0,
+    "PowerPoint Copilot": 0,
+    "Outlook Copilot": 0
+  },
+
+  "toolExplanation": "An Agent can deliver fast answers from approved SOPs and safety documentation, helping employees access critical information when needed.",
+
+  "promptScoring": {
+    "goal": ["create", "build"],
+    "context": ["procedures", "safety", "manufacturing"],
+    "audience": ["workers", "employees", "operators"],
+    "outputFormat": ["agent", "assistant"],
+    "constraints": ["approved procedures", "compliance", "safety"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "procedure access",
+      "keywords": ["procedures", "sops", "instructions"]
+    },
+    {
+      "requirement": "safety information",
+      "keywords": ["safety", "compliance"]
+    },
+    {
+      "requirement": "manufacturing environment",
+      "keywords": ["production", "manufacturing", "operators"]
+    },
+    {
+      "requirement": "quick answers",
+      "keywords": ["fast", "quick", "immediate"]
+    },
+    {
+      "requirement": "approved content",
+      "keywords": ["approved", "official"]
+    }
+  ],
+
+  "samplePrompt": "Create a manufacturing knowledge agent that helps employees find standard operating procedures and safety guidance from approved documentation."
+},
+{
+  "id": 25,
+  "title": "Compliance Knowledge Assistant",
+  "difficulty": "Advanced",
+  "industry": "Financial Services",
+  "category": "Agent",
+  "estimatedTime": 3,
+
+  "scenario": "Employees regularly need guidance on internal compliance requirements but struggle to locate the correct documentation.",
+
+  "recommendedTool": "Agent",
+
+  "toolScores": {
+    "Agent": 50,
+    "Copilot Chat": 35,
+    "Word Copilot": 0,
+    "Excel Copilot": 0,
+    "PowerPoint Copilot": 0,
+    "Outlook Copilot": 0,
+    "Teams Copilot": 0
+  },
+
+  "toolExplanation": "Compliance information benefits from a governed experience where users receive answers from approved and trusted sources.",
+
+  "promptScoring": {
+    "goal": ["create", "build"],
+    "context": ["compliance", "regulations", "policies"],
+    "audience": ["employees", "staff"],
+    "outputFormat": ["agent", "knowledge assistant"],
+    "constraints": ["approved sources", "accurate", "consistent"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "compliance guidance",
+      "keywords": ["compliance", "regulations"]
+    },
+    {
+      "requirement": "approved sources",
+      "keywords": ["approved", "official"]
+    },
+    {
+      "requirement": "knowledge retrieval",
+      "keywords": ["find", "locate", "retrieve"]
+    },
+    {
+      "requirement": "consistent answers",
+      "keywords": ["consistent", "accurate"]
+    },
+    {
+      "requirement": "employee support",
+      "keywords": ["employees", "staff"]
+    }
+  ],
+
+  "samplePrompt": "Create a compliance agent that answers employee questions using approved compliance policies, procedures, and regulatory guidance."
+},
+{
+  "id": 26,
+  "title": "Vendor Agreement Search",
+  "difficulty": "Advanced",
+  "industry": "Procurement",
+  "category": "Agent",
+  "estimatedTime": 3,
+
+  "scenario": "Procurement staff frequently need information from vendor agreements stored across dozens of contracts and supporting documents.",
+
+  "recommendedTool": "Agent",
+
+  "toolScores": {
+    "Agent": 50,
+    "Copilot Chat": 40,
+    "Word Copilot": 10,
+    "Outlook Copilot": 0,
+    "Excel Copilot": 0,
+    "PowerPoint Copilot": 0,
+    "Teams Copilot": 0
+  },
+
+  "toolExplanation": "An Agent can search a managed contract repository and answer questions without requiring users to manually review agreements.",
+
+  "promptScoring": {
+    "goal": ["create", "build"],
+    "context": ["contracts", "agreements", "vendors"],
+    "audience": ["procurement", "purchasing"],
+    "outputFormat": ["agent", "assistant"],
+    "constraints": ["approved contracts", "fast retrieval"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "contract search",
+      "keywords": ["contracts", "agreements"]
+    },
+    {
+      "requirement": "vendor information",
+      "keywords": ["vendors", "suppliers"]
+    },
+    {
+      "requirement": "knowledge retrieval",
+      "keywords": ["find", "locate", "search"]
+    },
+    {
+      "requirement": "time savings",
+      "keywords": ["save time", "efficient"]
+    },
+    {
+      "requirement": "centralized information",
+      "keywords": ["repository", "centralized"]
+    }
+  ],
+
+  "samplePrompt": "Create a procurement agent that helps staff quickly find answers from vendor contracts and related procurement documentation."
+},
+{
+  "id": 27,
+  "title": "Customer Service Knowledge Base",
+  "difficulty": "Advanced",
+  "industry": "Customer Service",
+  "category": "Agent",
+  "estimatedTime": 3,
+
+  "scenario": "Customer service representatives answer many of the same questions every day and struggle to locate approved responses quickly.",
+
+  "recommendedTool": "Agent",
+
+  "toolScores": {
+    "Agent": 50,
+    "Copilot Chat": 30,
+    "Teams Copilot": 10,
+    "Word Copilot": 0,
+    "Excel Copilot": 0,
+    "PowerPoint Copilot": 0,
+    "Outlook Copilot": 0
+  },
+
+  "toolExplanation": "An Agent can provide approved responses and procedural guidance to support consistent customer interactions.",
+
+  "promptScoring": {
+    "goal": ["create", "build"],
+    "context": ["customer service", "support", "responses"],
+    "audience": ["representatives", "agents"],
+    "outputFormat": ["agent", "knowledge assistant"],
+    "constraints": ["approved responses", "consistent"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "customer questions",
+      "keywords": ["customer", "support"]
+    },
+    {
+      "requirement": "approved responses",
+      "keywords": ["approved", "responses"]
+    },
+    {
+      "requirement": "speed",
+      "keywords": ["quick", "fast"]
+    },
+    {
+      "requirement": "consistency",
+      "keywords": ["consistent", "standardized"]
+    },
+    {
+      "requirement": "knowledge access",
+      "keywords": ["knowledge", "guidance"]
+    }
+  ],
+
+  "samplePrompt": "Create a customer service knowledge agent that provides approved responses and support guidance using official documentation."
+},
+{
+  "id": 28,
+  "title": "Executive Research Briefing",
+  "difficulty": "Advanced",
+  "industry": "Executive Leadership",
+  "category": "Copilot Chat",
+  "estimatedTime": 3,
+
+  "scenario": "Leadership needs recommendations on a strategic issue, but the supporting information is spread across numerous reports, presentations, and documents.",
+
+  "recommendedTool": "Copilot Chat",
+
+  "toolScores": {
+    "Copilot Chat": 50,
+    "Agent": 35,
+    "Word Copilot": 20,
+    "PowerPoint Copilot": 15,
+    "Excel Copilot": 10,
+    "Outlook Copilot": 0,
+    "Teams Copilot": 0
+  },
+
+  "toolExplanation": "Copilot Chat excels at synthesizing information from multiple sources and producing recommendations based on diverse content.",
+
+  "promptScoring": {
+    "goal": ["analyze", "recommend", "summarize"],
+    "context": ["reports", "documents", "research"],
+    "audience": ["leadership", "executives"],
+    "outputFormat": ["briefing", "recommendations", "summary"],
+    "constraints": ["strategic", "executive-ready"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "multiple sources",
+      "keywords": ["reports", "documents", "sources"]
+    },
+    {
+      "requirement": "strategic issue",
+      "keywords": ["strategy", "strategic"]
+    },
+    {
+      "requirement": "recommendations",
+      "keywords": ["recommend", "recommendations"]
+    },
+    {
+      "requirement": "executive audience",
+      "keywords": ["executives", "leadership"]
+    },
+    {
+      "requirement": "summary",
+      "keywords": ["briefing", "summary"]
+    }
+  ],
+
+  "samplePrompt": "Review these reports and documents, identify strategic risks and opportunities, and prepare an executive briefing with recommendations."
+},
+{
+  "id": 29,
+  "title": "Merger Planning",
+  "difficulty": "Advanced",
+  "industry": "Corporate Strategy",
+  "category": "Copilot Chat",
+  "estimatedTime": 3,
+
+  "scenario": "An executive team is preparing for a merger and needs help identifying potential integration challenges across the two organizations.",
+
+  "recommendedTool": "Copilot Chat",
+
+  "toolScores": {
+    "Copilot Chat": 50,
+    "Agent": 25,
+    "PowerPoint Copilot": 15,
+    "Word Copilot": 10,
+    "Excel Copilot": 10,
+    "Outlook Copilot": 0,
+    "Teams Copilot": 0
+  },
+
+  "toolExplanation": "Copilot Chat is ideal for comparing information from multiple sources and surfacing risks, gaps, and opportunities.",
+
+  "promptScoring": {
+    "goal": ["compare", "analyze", "identify"],
+    "context": ["merger", "organizations", "documents"],
+    "audience": ["executives", "leadership"],
+    "outputFormat": ["analysis", "report"],
+    "constraints": ["integration risks", "recommendations"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "merger analysis",
+      "keywords": ["merger", "acquisition"]
+    },
+    {
+      "requirement": "compare organizations",
+      "keywords": ["compare", "differences"]
+    },
+    {
+      "requirement": "integration challenges",
+      "keywords": ["integration", "challenge", "risk"]
+    },
+    {
+      "requirement": "recommendations",
+      "keywords": ["recommendation", "actions"]
+    },
+    {
+      "requirement": "leadership support",
+      "keywords": ["executive", "leadership"]
+    }
+  ],
+
+  "samplePrompt": "Compare information from these organizations and identify potential integration challenges, risks, and recommendations for leadership."
+},
+{
+  "id": 30,
+  "title": "Enterprise Knowledge Hub",
+  "difficulty": "Advanced",
+  "industry": "Enterprise Operations",
+  "category": "Agent",
+  "estimatedTime": 3,
+
+  "scenario": "Employees across HR, Finance, IT, and Operations struggle to find answers because information is spread across multiple departments and repositories.",
+
+  "recommendedTool": "Agent",
+
+  "toolScores": {
+    "Agent": 50,
+    "Copilot Chat": 40,
+    "Teams Copilot": 10,
+    "Word Copilot": 0,
+    "Excel Copilot": 0,
+    "PowerPoint Copilot": 0,
+    "Outlook Copilot": 0
+  },
+
+  "toolExplanation": "An Agent creates a centralized experience that makes organizational knowledge easier to discover across multiple departments.",
+
+  "promptScoring": {
+    "goal": ["create", "build", "design"],
+    "context": ["knowledge", "departments", "repositories"],
+    "audience": ["employees", "staff"],
+    "outputFormat": ["agent", "knowledge hub", "assistant"],
+    "constraints": ["self-service", "accurate", "centralized"]
+  },
+
+  "scenarioUnderstanding": [
+    {
+      "requirement": "knowledge discovery",
+      "keywords": ["knowledge", "information"]
+    },
+    {
+      "requirement": "multiple departments",
+      "keywords": ["hr", "finance", "it", "operations"]
+    },
+    {
+      "requirement": "centralized access",
+      "keywords": ["centralized", "single place"]
+    },
+    {
+      "requirement": "employee self-service",
+      "keywords": ["self-service", "employees"]
+    },
+    {
+      "requirement": "improved search",
+      "keywords": ["find", "search", "discover"]
+    }
+  ],
+
+  "samplePrompt": "Create an enterprise knowledge agent that helps employees find information across HR, Finance, IT, and Operations using approved content sources."
+}
