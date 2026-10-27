@@ -426,3 +426,16 @@ textarea:focus {
         font-size: 3rem;
     }
 }
+
+#playbook-form .ml-form-embedWrapper {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+#playbook-form .ml-form-embedContainer {
+    width: 100% !important;
+}
+
+#playbook-form {
+    margin-top: 10px;
+}
