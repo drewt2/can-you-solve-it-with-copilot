@@ -414,7 +414,7 @@
   "category": "Copilot Chat",
   "estimatedTime": 3,
 
-  "scenario": "You have a meeting with an important client in less than an hour. Over the past several months, there have been emails, meetings, document reviews, and support requests related to the account. You need to quickly understand the current relationship, open issues, and recent activity before the conversation begins. Missing a key detail could create an awkward moment in the meeting.,
+  "scenario": "You have a meeting with an important client in less than an hour. Over the past several months, there have been emails, meetings, document reviews, and support requests related to the account. You need to quickly understand the current relationship, open issues, and recent activity before the conversation begins. Missing a key detail could create an awkward moment in the meeting.",
 
   "recommendedTool": "Copilot Chat",
 
