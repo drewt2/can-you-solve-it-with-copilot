@@ -248,15 +248,15 @@ h4 {
 }
 
 .beginner {
-    background: var(--primary-blue);
+    background: var(--dark-text);
 }
 
 .intermediate {
-    background: var(--orange);
+    background: var(--dark-text);
 }
 
 .advanced {
-    background: var(--purple);
+    background: var(--dark-text);
 }
 
 .difficulty-button:hover {
