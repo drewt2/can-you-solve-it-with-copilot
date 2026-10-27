@@ -1,1 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Can You Solve It With Copilot?</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <!-- Landing Page -->
+
+    <section id="landing-page" class="page-section">
+
+        <div class="container">
+
+            <h1>Can You Solve It With Copilot?</h1>
+
+            <p class="subtitle">
+                Real business problems. Real Copilot decisions.
+            </p>
+
+            <p class="intro">
+                Practice choosing the right Microsoft Copilot experience and writing effective prompts for workplace scenarios. Receive immediate feedback, improve your prompting skills, and learn when to use Copilot Chat, Copilot in Apps, or Agents.
+            </p>
+
+            <div class="info-card">
+
+                <h2>How It Works</h2>
+
+                <ul class="check-list">
+                    <li>Choose the Copilot experience you would use</li>
+                    <li>Write the prompt you would use</li>
+                    <li>Receive immediate feedback</li>
+                    <li>Compare your answer to a recommended solution</li>
+                </ul>
+
+                <p class="estimate">
+                    Estimated Time: 2–3 Minutes
+                </p>
+
+            </div>
+
+            <div class="button-area">
+
+                <button id="random-btn" class="primary-button">
+                    🎲 Random Scenario
+                </button>
+
+            </div>
+
+            <div class="difficulty-section">
+
+                <h3>Choose a Difficulty</h3>
+
+                <div class="difficulty-buttons">
+
+                    <button id="beginner-btn" ntermediate-btn" class="difficulty-button intermediate">
+                        🟡 Intermediate
+                    </button>
+
+                    <button id="advanced-btn" class="difficulty-button advanced">
+                        🔴 Advanced
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Assessment Page -->
+
+    <section id="assessment-page" class="page-section" style="display:none;">
+
+        <div class="container">
+
+            <div class="step-header">
+
+                <p class="step-number">
+                    Step 1 of 2
+                </p>
+
+                <p class="time-indicator">
+                    Estimated Time Remaining: 2 Minutes
+                </p>
+
+            </div>
+
+            <div class="badge-row">
+
+                <span id="difficulty-badge" class="badge"></span>
+
+                <span id="category-badge" class="badge"></span>
+
+            </div>
+
+            <div class="scenario-card">
+
+                <h2 id="scenario-title"></h2>
+
+                <p id="scenario-text"></p>
+
+            </div>
+
+            <div class="question-block">
+
+                <h3>
+                    Which Copilot experience would you use?
+                </h3>
+
+                <div class="tool-options">
+
+                    <label>
+                        <input type="radio" name="tool" value="Copilot Chat">
+                        Copilot Chat
+                    </label>
+
+                    <label>
+                        <input type="radio" name="tool" value="Word Copilot">
+                        Word Copilot
+                    </label>
+
+                    <label>
+                        <input type="radio" name="tool" value="Excel Copilot">
+                        Excel Copilot
+                    </label>
+
+                    <label>
+                        <input type="radio" name="tool" value="PowerPoint Copilot">
+                        PowerPoint Copilot
+                    </label>
+
+                    <label>
+                        <input type="radio" name="tool" value="Outlook Copilot">
+                        Outlook Copilot
+                    </label>
+
+                    <label>
+                        <input type="radio" name="tool" value="Teams Copilot">
+                        Teams Copilot
+                    </label>
+
+                    <label>
+                        <input type="radio" name="tool" value="Agent">
+                        Agent
+                    </label>
+
+                </div>
+
+            </div>
+
+            <div class="question-block">
+
+                <h3>
+                    Write the prompt you would use.
+                </h3>
+
+                <textarea
+                    id="user-prompt"
+                    rows="10"
+                    placeholder="Write the prompt you would give Copilot..."
+                ></textarea>
+
+            </div>
+
+            <div class="submit-area">
+
+                <button id="submit-assessment" class="primary-button">
+                    Submit Assessment
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Results Page -->
+
+    <section id="results-page" class="page-section" style="display:none;">
+
+        <div class="container">
+
+            <div class="step-header">
+
+                <p class="step-number">
+                    Step 2 of 2
+                </p>
+
+                <h2>
+                    Review Your Results
+                </h2>
+
+            </div>
+
+            <div class="score-card">
+
+                <div class="score-label">
+                    Overall Score
+                </div>
+
+                <div id="overall-score" class="overall-score">
+                    0
+                </div>
+
+                <div class="score-max">
+                    /100
+                </div>
+
+            </div>
+
+            <div class="results-grid">
+
+                <div class="result-box">
+
+                    <h4>Tool Selection</h4>
+
+                    <div id="tool-score" class="metric-score">
+                        0
+                    </div>
+
+                    <div class="metric-max">
+                        /50
+                    </div>
+
+                </div>
+
+                <div class="result-box">
+
+                    <h4>Prompt Structure</h4>
+
+                    <div id="prompt-score" class="metric-score">
+                        0
+                    </div>
+
+                    <div class="metric-max">
+                        /25
+                    </div>
+
+                </div>
+
+                <div class="result-box">
+
+                    <h4>Scenario Understanding</h4>
+
+                    <div id="scenario-score" class="metric-score">
+                        0
+                    </div>
+
+                    <div class="metric-max">
+                        /25
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="maturity-card">
+
+                <h3>Prompt Maturity</h3>
+
+                <div id="maturity-stars" class="stars"></div>
+
+                <h4 id="maturity-level"></h4>
+
+                <p id="maturity-description"></p>
+
+            </div>
+
+            <div class="feedback-grid">
+
+                <div class="feedback-box">
+
+                    <h3>What You Did Well</h3>
+
+                    <ul id="strengths"></ul>
+
+                </div>
+
+                <div class="feedback-box">
+
+                    <h3>Opportunities</h3>
+
+                    <ul id="opportunities"></ul>
+
+                </div>
+
+            </div>
+
+            <div class="button-area">
+
+                <button id="reveal-solution" class="secondary-button">
+                    Reveal Recommended Solution
+                </button>
+
+            </div>
+
+            <!-- Hidden Solution Section -->
+
+            <div
+                id="solution-section"
+                class="solution-section"
+                style="display:none;"
+            >
+
+                <h2>Recommended Solution</h2>
+
+                <div class="solution-card">
+
+                    <h3>Recommended Tool</h3>
+
+                    <p id="solution-tool"></p>
+
+                </div>
+
+                <div class="solution-card">
+
+                    <h3>Why This Tool Was Recommended</h3>
+
+                    <p id="solution-explanation"></p>
+
+                </div>
+
+                <div class="solution-card">
+
+                    <h3>Example Strong Prompt</h3>
+
+                    <div id="solution-prompt" class="prompt-example"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Newsletter Section -->
+
+            <div class="newsletter-section">
+
+                <h2>Keep Learning</h2>
+
+                <div class="newsletter-grid">
+
+                    <div class="newsletter-card">
+
+                        <h3>Playbook</h3>
+
+                        <p>
+                            Practical Microsoft 365, Copilot, and automation strategies focused on creating task freedom and improving the way you work.
+                        </p>
+
+                        <div id="playbook-form">
+                            <!-- Playbook Embed Goes Here -->
+                        </div>
+
+                    </div>
+
+                    <div class="newsletter-card">
+
+                        <h3>Everyday Office</h3>
+
+                        <p>
+                            Productivity tips, Microsoft 365 guidance, and practical workplace solutions to help you get more value from everyday tools.
+                        </p>
+
+                        <div id="everyday-office-form">
+                            <!-- Everyday Office Embed Goes Here -->
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="button-area">
+
+                <button id="try-another" class="primary-button">
+                    Try Another Scenario
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
