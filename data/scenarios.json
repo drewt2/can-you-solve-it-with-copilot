@@ -576,7 +576,7 @@
   ],
 
   "samplePrompt": "Analyze this expense data, identify unusual spending patterns and cost increases, and provide a summary highlighting the areas that deserve management attention."
-}
+},
 
     {
   "id": 11,
@@ -1147,7 +1147,7 @@
   ],
 
   "samplePrompt": "Analyze these customer comments, identify common themes and concerns, prioritize the most important issues, and summarize opportunities for improvement."
-}
+},
 
     {
   "id": 21,
@@ -1718,4 +1718,6 @@
   ],
 
   "samplePrompt": "Create an enterprise knowledge agent that helps employees find information across HR, Finance, IT, and Operations using approved content sources."
+}
+  ]
 }
